@@ -39,5 +39,4 @@ public class Main {
         System.out.println("Tip Per Person: " + receipt.perPersonTipAmount());
         System.out.println("Total Cost Per Person: " + receipt.perPersonTotalCost());
     }
-
 }

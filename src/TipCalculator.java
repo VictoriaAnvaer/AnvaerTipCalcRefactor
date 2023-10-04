@@ -1,5 +1,4 @@
 public class TipCalculator {
-
     private int numPeople;
     private int tipPercentage;
     private double totalBillBeforeTip;
@@ -40,5 +39,4 @@ public class TipCalculator {
     public double perPersonTotalCost () {
         return Math.round((totalBill() / numPeople) * 100.0) / 100.0;
     }
-
 }
