@@ -27,7 +27,7 @@ public class TipCalculator {
     }
 
     public double totalBill() {
-        return tipAmount() + totalBillBeforeTip;
+        return Math.round((tipAmount() + totalBillBeforeTip) * 100.0) / 100.0;
     }
     public double perPersonCostBeforeTip() {
         return Math.round((totalBillBeforeTip / numPeople) * 100.0) / 100.0;

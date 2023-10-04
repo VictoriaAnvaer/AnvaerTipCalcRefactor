@@ -14,6 +14,8 @@ public class Main {
 
         TipCalculator receipt = new TipCalculator(numPeople, tipPercentage);
 
+        System.out.println();
+
         System.out.print("Enter a cost in dollars and cents (-1 to end): ");
         double cost = scan.nextDouble();
 
@@ -26,6 +28,8 @@ public class Main {
             receipt.addMeal(cost);
         }
         receipt.addMeal(1);
+
+        System.out.println();
 
         System.out.println("Total Bill Before Tip: " + receipt.getTotalBillBeforeTip());
         System.out.println("Tip Percentage: " + receipt.getTipPercentage());
